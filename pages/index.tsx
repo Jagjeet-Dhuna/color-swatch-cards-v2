@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import ColorCard from "@/components/colorCard";
+import ColorCard from "@/components/ColorCard";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
