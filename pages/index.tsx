@@ -1,5 +1,5 @@
 import { Plus_Jakarta_Sans, Roboto_Mono } from "next/font/google";
-import ColorCard from "../components/ColorCard";
+import ColorCard from "../components/TTCard";
 import BgButton from "../components/BgButton";
 
 const googleSans = Plus_Jakarta_Sans({
@@ -20,7 +20,7 @@ export default function Home() {
           <ColorCard id="large-card-container" hexCode="#68d2f0" isLarge={true}/>
         </div>
         <div className="grid grid-cols-5 gap-4 mb-16 mt-2">
-          <ColorCard id="small-card-container" hexCode="#458034"/>
+          <ColorCard id="small-card-container" hexCode="#458034" isLocked={true}/>
           <ColorCard id="small-card-container" hexCode="#106664"/>
           <ColorCard id="small-card-container" hexCode="#8accc7"/>
           <ColorCard id="small-card-container" hexCode="#c37949"/>
