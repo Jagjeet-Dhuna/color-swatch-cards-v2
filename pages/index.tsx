@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 import { Plus_Jakarta_Sans, Roboto_Mono } from "next/font/google";
 import ColorCard from "../components/ColorCard";
 import BgButton from "../components/BgButton";
+=======
+import { Geist, Geist_Mono } from "next/font/google";
+import ColorCard from "@/components/ColorCard";
+>>>>>>> 73e06b8b539c464f62a67c47e4c35cdccd139aaa
 
 const googleSans = Plus_Jakarta_Sans({
   variable: "--font-google-sans",
