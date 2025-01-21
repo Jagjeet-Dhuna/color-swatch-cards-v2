@@ -1,30 +1,32 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import ColorCard from "@/components/colorCard";
+import { Plus_Jakarta_Sans, Roboto_Mono } from "next/font/google";
+import ColorCard from "../components/ColorCard";
+import BgButton from "../components/BgButton";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const googleSans = Plus_Jakarta_Sans({
+  variable: "--font-google-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const monoFont = Roboto_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
 });
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center">
-      <div className="w-full max-w-4xl space-y-2 p-4">
+    <main className={`min-h-screen flex items-center justify-center ${googleSans.variable} ${monoFont.variable} font-sans`}>
+      <div className="w-full max-w-4xl p-4">
         <div className="w-full">
-          <ColorCard hexCode="#68d2f0" isLarge={true}/>
+          <ColorCard id="large-card-container" hexCode="#68d2f0" isLarge={true}/>
         </div>
-        <div className="grid grid-cols-5 gap-2">
-          <ColorCard hexCode="#458034"/>
-          <ColorCard hexCode="#106664"/>
-          <ColorCard hexCode="#8accc7"/>
-          <ColorCard hexCode="#c37949"/>
-          <ColorCard hexCode="#8056ff"/>
+        <div className="grid grid-cols-5 gap-4 mb-16 mt-2">
+          <ColorCard id="small-card-container" hexCode="#458034"/>
+          <ColorCard id="small-card-container" hexCode="#106664"/>
+          <ColorCard id="small-card-container" hexCode="#8accc7"/>
+          <ColorCard id="small-card-container" hexCode="#c37949"/>
+          <ColorCard id="small-card-container" hexCode="#8056ff"/>
         </div>
+        <BgButton/>
       </div>
     </main>
   );
